@@ -5,14 +5,18 @@ import lightImg from '../assets/website/light-mode-button.png'
 
 export default function Theme() {
 
-    const [theme,setTheme]=useState('light')
+    const [theme,setTheme]=useState(
+        localStorage.getItem('theme')?localStorage.getItem('theme'):'light')
     const ele=document.documentElement
 
     useEffect(()=>{
         if(theme==='dark'){
             ele.classList.add("dark");
+            localStorage.setItem('theme','dark')
         }else{
             ele.classList.remove("dark");
+            localStorage.setItem('theme','light')
+
 
         }
 
