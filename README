@@ -1,0 +1,5 @@
+1- Theme:
+    tailwind.config---> darkmode:'class' ---> control this by document.classList.add/remove 
+
+2-gruop: 
+    if you want to make action when hover multiple element on the same group
