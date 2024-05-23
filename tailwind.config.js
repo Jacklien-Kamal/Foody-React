@@ -12,6 +12,9 @@ export default {
         secondary:'#ff9c01'
 
       },
+      animation: {
+        'spin': 'spin 25s linear infinite',
+      },
       container:{
         center:true,
         padding:{

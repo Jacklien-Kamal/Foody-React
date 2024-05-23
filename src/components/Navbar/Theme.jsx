@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import darkImg from '../assets/website/dark-mode-button.png'
-import lightImg from '../assets/website/light-mode-button.png'
+import darkImg from '../../assets/website/dark-mode-button.png'
+import lightImg from '../../assets/website/light-mode-button.png'
 
 
 export default function Theme() {

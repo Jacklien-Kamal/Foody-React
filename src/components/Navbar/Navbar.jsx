@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/food-logo.png";
 import { FaCartShopping } from "react-icons/fa6";
-import Theme from "../Theme";
+import Theme from "./Theme";
 
 export default function Navbar() {
   const navbarLinks = ["Home", "About", "Contact"];
@@ -33,7 +33,7 @@ export default function Navbar() {
               ))}
 
             </ul>
-            <button className="bg-gradient-to-r from-primary to-secondary text-white text-lg px-4 py-1 rounded-full hover:scale-105 duration-300"> Order
+            <button className="bg-gradient-to-r from-primary to-secondary text-white text-lg sm:flex items-center px-4 py-1 rounded-full hover:scale-105 duration-300"> Order
             <FaCartShopping className='inline-block ml-2'/>
             </button>
           </div>
