@@ -38,7 +38,7 @@ export default function Navbar() {
               to="/cart"
               className="bg-gradient-to-r from-primary to-secondary text-white text-lg sm:flex items-center px-4 py-1 rounded-full hover:scale-105 duration-300"
             >
-              Order
+              Cart
               <FaCartShopping className="inline-block ml-2" />
             </Link>
 

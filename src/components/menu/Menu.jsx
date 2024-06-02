@@ -46,7 +46,7 @@ function Menu() {
             <img
               src={food.image_url}
               alt={food.name}
-              className="w-[400px] h-[200px] mx-auto  rounded-lg sm:w-[200px] sm:h-[120px] md:w-[350px] md:h-[200px] lg:w-[400px] lg:h-[200px]"
+              className="w-[400px] h-[200px] mx-auto  rounded-lg sm:w-[200px] sm:h-[120px] md:w-[350px] md:h-[200px] lg:w-[400px] lg:h-[200px]  hover:scale-105 cursor-pointer"
             />
 
 

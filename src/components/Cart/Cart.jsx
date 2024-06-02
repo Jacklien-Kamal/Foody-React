@@ -15,7 +15,7 @@ export default function Cart() {
     };
   
   return (
-    <div className="px-10 pb-48 dark:bg-gray-950 dark:text-white">
+    <div className="px-10 pb-48 dark:bg-gray-950 dark:text-white h-[100vh]">
       <h1 className="font-bold text-2xl py-10">You Cart</h1>
       <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">        {cartItems.map((food) => (
           <div
@@ -25,16 +25,16 @@ export default function Cart() {
           <img
             src={food.image_url}
             alt={food.name}
-            className="w-[400px] h-[200px] mx-auto  rounded-lg sm:w-[200px] sm:h-[120px] md:w-[350px] md:h-[200px] lg:w-[400px] lg:h-[200px]"
+            className="w-[400px] h-[200px] mx-auto  rounded-lg sm:w-[200px] sm:h-[120px] md:w-[350px] md:h-[200px] lg:w-[400px] lg:h-[200px] hover:scale-105 cursor-pointer"
           />
 
-          <p className="text-sm pfont-bold py-2 pb-0 sm:text-lg md:text-xl lg:text-2xl">
-            {food.name}
-          </p>
-          <span className="text-gray-400 pb-4 sm:text-xs lg:text-sm">
-            {food.cuisine}
-          </span>
-          <span>{food.price}</span>
+<span className="text-sm pfont-bold py-2 pb-0 sm:text-lg md:text-xl lg:text-2xl pe-10">
+              {food.name}
+            </span>
+            <p className="text-gray-400 pb-4 sm:text-xs lg:text-sm">
+              {food.cuisine}
+            </p>
+            <p className="text-primary text-xl">{food.price}</p>
           <p className="text-sm sm:text-xs lg:text-sm">{food.description}</p>
           <div className="grid grid-cols-2 gap-x-10 items-center">
           <button
