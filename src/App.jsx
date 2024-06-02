@@ -5,18 +5,20 @@ import Services from './components/Services/Services'
 import Banner from './components/Banner/Banner'
 import AppStore from './components/AppStore/AppStore'
 import Menu from './components/menu/Menu'
+import Cart from './components/Cart/Cart'
 
 export default function App() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/>
     <Welcom/>
     <Services/>
 
     <Banner/>
     <Menu/>
 
-    <AppStore/>
+    <AppStore/> */}
+    <Cart/>
     </>
   )
 }
