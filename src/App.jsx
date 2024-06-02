@@ -4,6 +4,7 @@ import Welcom from './components/welcome/welcome'
 import Services from './components/Services/Services'
 import Banner from './components/Banner/Banner'
 import AppStore from './components/AppStore/AppStore'
+import Menu from './components/menu/Menu'
 
 export default function App() {
   return (
@@ -11,7 +12,10 @@ export default function App() {
     <Navbar/>
     <Welcom/>
     <Services/>
+
     <Banner/>
+    <Menu/>
+
     <AppStore/>
     </>
   )

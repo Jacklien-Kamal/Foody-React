@@ -4,10 +4,10 @@ import appStore from "../../assets/app_store.png";
 import playStore from "../../assets/play_store.png";
 export default function () {
   return (
-    <div className="bg-gray-100 ">
+    <div className="bg-gray-100 dark:bg-gray-800">
       <div className="container py-12  grid grid-cols-1 sm:grid-cols-2 place-items-center ">
         <div className="max-w-[450px]">
-          <p className="text-center text-gray-700 font-bold text-2xl  lg:text-3xl md:text-2xl sm:text-2xl  sm:text-left">
+          <p className="text-center text-gray-700 font-bold text-2xl  lg:text-3xl md:text-2xl sm:text-2xl  sm:text-left  dark:text-[white] ">
             Foodly is available for Android and IOS{" "}
           </p>
           <div className="flex flex-wrap justify-center sm:justify-start items-center py-3">
