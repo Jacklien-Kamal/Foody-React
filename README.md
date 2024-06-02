@@ -1,8 +1,9 @@
 
     json-server --watch db.json --port 5000
     npm run dev
-https://665c677e37abf64e33ca1df8--sensational-lollipop-cf15b3.netlify.app/
-
+    
+    Preview:
+https://665c69ba7c1671ace2c02d7e--resilient-fox-3c55a5.netlify.app/
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
