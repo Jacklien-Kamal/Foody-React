@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/food-logo.png";
 import { FaCartShopping } from "react-icons/fa6";
 import Theme from "./Theme";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const navbarLinks = ["Home", "About", "Contact"];
@@ -10,13 +11,13 @@ export default function Navbar() {
       <div className="container">
         <div className="flex items-center justify-between">
           <div>
-            <a
-              href="#"
+          <Link
+              to="/"
               className="flex gap-x-1 items-center font-bold text-2xl sm:text-3xl"
             >
-              <img src={logo} className="w-10 h-10" />
+              <img src={logo} className="w-10 h-10" alt="Logo" />
               Foody
-            </a>
+            </Link>
           </div>
           <div className="flex items-center gap-4">
             <Theme/>
@@ -33,9 +34,14 @@ export default function Navbar() {
               ))}
 
             </ul>
-            <button className="bg-gradient-to-r from-primary to-secondary text-white text-lg sm:flex items-center px-4 py-1 rounded-full hover:scale-105 duration-300"> Order
-            <FaCartShopping className='inline-block ml-2'/>
-            </button>
+            <Link
+              to="/cart"
+              className="bg-gradient-to-r from-primary to-secondary text-white text-lg sm:flex items-center px-4 py-1 rounded-full hover:scale-105 duration-300"
+            >
+              Order
+              <FaCartShopping className="inline-block ml-2" />
+            </Link>
+
           </div>
         </div>
       </div>

@@ -6,19 +6,26 @@ import Banner from './components/Banner/Banner'
 import AppStore from './components/AppStore/AppStore'
 import Menu from './components/menu/Menu'
 import Cart from './components/Cart/Cart'
+import Home from './pages/Home'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+
 
 export default function App() {
+
   return (
     <>
-    {/* <Navbar/>
-    <Welcom/>
-    <Services/>
 
-    <Banner/>
-    <Menu/>
+     <Router>
+     <Navbar />
 
-    <AppStore/> */}
-    <Cart/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+  
+      </Routes>
+      <AppStore/>
+    </Router>
     </>
   )
 }

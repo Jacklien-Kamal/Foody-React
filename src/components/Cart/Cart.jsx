@@ -15,8 +15,8 @@ export default function Cart() {
     };
   
   return (
-    <div className="container">
-      <h1 className="font-bold text-xl py-10 ">You Cart</h1>
+    <div className="px-10 pb-48 dark:bg-gray-950 dark:text-white">
+      <h1 className="font-bold text-2xl py-10">You Cart</h1>
       <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">        {cartItems.map((food) => (
           <div
           key={food.id}
