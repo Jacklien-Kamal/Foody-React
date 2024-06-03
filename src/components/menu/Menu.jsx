@@ -8,9 +8,9 @@ function Menu() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("http://localhost:5000/resturants");
+        const response = await axios.get("https://mocki.io/v1/a51ef70a-5a39-41d2-b5f2-d9b2e01f0566");
         console.log(response.data);
-        setFoods(response.data); // Assuming response.data is an array of food items
+        setFoods(response.data.resturants); // Assuming response.data is an array of food items
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -37,7 +37,7 @@ function Menu() {
   return (
     <div className="bg-white py-10 dark:bg-gray-950 dark:text-white ">
       <h1 className="text-[70px] font-bold text-center pb-8">Food List</h1>
-      <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
         {foods.slice(0, visibleCount).map((food) => (
           <div
             key={food.id}
@@ -46,7 +46,7 @@ function Menu() {
             <img
               src={food.image_url}
               alt={food.name}
-              className="w-[400px] h-[200px] mx-auto  rounded-lg sm:w-[200px] sm:h-[120px] md:w-[350px] md:h-[200px] lg:w-[400px] lg:h-[200px]  hover:scale-105 cursor-pointer"
+              className="w-[400px] h-[200px] mx-auto  rounded-lg sm:w-[200px] sm:h-[120px] md:w-[350px] md:h-[200px] lg:w-[300px] lg:h-[200px]  hover:scale-105 cursor-pointer"
             />
 
 
