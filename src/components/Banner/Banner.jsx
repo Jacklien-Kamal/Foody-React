@@ -37,7 +37,7 @@ export default function
             </p>
            
             <div>
-              <button className="bg-gradient-to-r from-primary to-secondary text-white py-2 px-4 rounded-full shadow-xl hover:shadow-md">
+              <button className="bg-gradient-to-r from-primary to-secondary text-white py-2 px-4 rounded-full shadow-xl hover:shadow-md hover:scale-105">
                 Order Now
               </button>
             </div>

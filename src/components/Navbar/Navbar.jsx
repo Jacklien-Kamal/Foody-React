@@ -10,17 +10,20 @@ export default function Navbar() {
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
       <div className="container">
         <div className="flex items-center justify-between">
+        <Theme/>
+
           <div>
           <Link
               to="/"
-              className="flex gap-x-1 items-center font-bold text-2xl sm:text-3xl"
+              className="flex gap-x-1 items-center font-bold text-2xl sm:text-5xl "
             >
               <img src={logo} className="w-10 h-10" alt="Logo" />
               Foody
             </Link>
+    
           </div>
+
           <div className="flex items-center gap-4">
-            <Theme/>
             <ul className="hidden sm:flex gap-4 text-lg">
               {navbarLinks.map((link,indx) => (
                 <li key={indx} >

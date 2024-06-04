@@ -46,7 +46,7 @@ export default function Welcom() {
               <div className="flex flex-col gap-4 justify-center text-center pt-12 sm:pt-0 sm:text-left order-2 sm:order-2">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold  ">
                   Welcome
-                  <span class="bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary">
+                  <span className="bg-clip-text text-transparent bg-gradient-to-b from-primary to-secondary">
                     {" "}
                     Foody{" "}
                   </span>
@@ -67,11 +67,9 @@ export default function Welcom() {
             <div className="min-h-[450px] sm:min-h-[450px] flex justify-center items-center relative order-1 sm:order-1 ">
               <div className="h-[300px] sm:h-[450px] overflow-hidden flex justify-center items-center">
                 <img
-                  data-aos="zoom-in"
-                  data-aos-duration="300"
-                  data-aos-once="true"
+              
                   src={img}
-                  className="w-[400px] sm:w-[500px] mx-auto animate-spin"
+                  className="w-[300px] sm:w-[400px] mx-auto animate-spin"
                 />
               </div>
 

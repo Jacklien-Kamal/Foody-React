@@ -15,11 +15,11 @@ export default function Cart() {
     };
   
   return (
-    <div className="px-10 pb-48 dark:bg-gray-950 dark:text-white h-[100vh]">
+    <div className="px-10 pb-48 dark:bg-gray-950 dark:text-white h-[100%]]">
       <h1 className="font-bold text-2xl py-10">You Cart</h1>
-      <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">        {cartItems.map((food) => (
+      <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">        {cartItems.map((food,idx) => (
           <div
-          key={food.id}
+          key={idx}
           className="bg-white shadow-lg rounded-xl  dark:bg-gray-800 dark:text-white  duration-200 px-8  "
         >
           <img
@@ -34,7 +34,7 @@ export default function Cart() {
             <p className="text-gray-400 pb-4 sm:text-xs lg:text-sm">
               {food.cuisine}
             </p>
-            <p className="text-primary text-xl">{food.price}</p>
+            <p className="text-secondary text-xl">{food.price}</p>
           <p className="text-sm sm:text-xs lg:text-sm">{food.description}</p>
           <div className="grid grid-cols-2 gap-x-10 items-center">
           <button
