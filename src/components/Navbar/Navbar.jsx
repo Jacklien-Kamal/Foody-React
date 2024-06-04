@@ -5,7 +5,7 @@ import Theme from "./Theme";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const navbarLinks = ["Home", "About", "Contact"];
+  const navbarLinks = [{title:"Home",link:'/'},{ title:"About",link:'#'}, {title:"Contact",link:'#'}];
   return (
     <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
       <div className="container">
@@ -27,12 +27,12 @@ export default function Navbar() {
             <ul className="hidden sm:flex gap-4 text-lg">
               {navbarLinks.map((link,indx) => (
                 <li key={indx} >
-                  <a
-                    href="#"
-                    className="inline-block py-4 px-4 hover:text-secondary "
+                  <Link
+              to={link.link}
+              className="inline-block py-4 px-4 hover:text-secondary "
                   >
-                    {link}
-                  </a>
+                    {link.title}
+                  </Link>
                 </li>
               ))}
 
