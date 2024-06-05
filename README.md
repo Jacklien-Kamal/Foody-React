@@ -3,7 +3,7 @@
     npm run dev
     
     Preview deployment:
-(https://665ec972c3578fd5a7b3939f--cheerful-entremet-4da1e4.netlify.app/)
+(https://666023f0c5e368d4b13d4f22--effervescent-cobbler-ba052f.netlify.app/)
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
