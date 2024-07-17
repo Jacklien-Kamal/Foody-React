@@ -12,14 +12,14 @@ export default {
         secondary:'#009900'
 
       },
-      animation: {
+        animation: {
         'spin': 'spin 25s linear infinite',
       },
       container:{
         center:true,
         padding:{
-          DEFAULT:'1rem',
-          sm:'3rem'
+          DEFAULT:'4rem',
+          sm:'115px'
 
         }
       }
