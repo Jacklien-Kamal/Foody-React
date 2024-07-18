@@ -69,7 +69,7 @@ export default function Welcom() {
                 <img
               
                   src={img}
-                  className="w-[300px] sm:w-[400px] mx-auto animate-spin z-10 "
+                  className="w-[300px] sm:w-[400px] mx-auto animate-spin "
                 />
               </div>
 

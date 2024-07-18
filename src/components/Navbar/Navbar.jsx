@@ -41,15 +41,16 @@ export default function Navbar() {
 
   return (
     <div className="drop-shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
-      <div className="mx-10 sm:container">
+      <div className="mx-2 sm:container">
         <div className="flex items-center  justify-between py-4">
           <Theme />
 
-            <Link to="/" className="flex items-center  gap-x-1 font-bold text-2xl md:text-3xl  ">
-              <img src={logo} className="hidden md:block w-12 h-12" alt="Logo" />
+            <Link to="/" className="hidden md:flex items-center  gap-x-1 font-bold text-xl md:text-3xl  ">
+              <img src={logo} className=" w-12 h-12" alt="Logo" />
               Foody
             </Link>
-
+  
+           
           <div className="flex items-center gap-4">
             {/* <button
               className="sm:hidden text-2xl"
@@ -58,18 +59,17 @@ export default function Navbar() {
                {isOpen ? <FaBars /> : <FaBars />} 
             </button> */}
             <ul className={`sm:flex gap-4 text-lg flex`}>
-             
-              <li className="relative">
+            <li className="relative list-none">
                 <input
                   type="text"
                   placeholder="Search for a meal..."
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  className="py-1 px-2 w-48 md:w-60 text-black border border-gray-300 rounded-full focus:outline-none"
+                  className="py-1 px-2 w-32 md:w-60 text-black border border-gray-300 rounded-full focus:outline-none"
                 />
                 {isDropdownVisible && (
                   <ul className="absolute bg-white border border-gray-300 rounded-md w-full mt-1 z-20">
-                    {searchResults.map((result, idx) => (
+                    {searchResults.splice(0,4).map((result, idx) => (
                       <li key={idx} className="p-2  text-gray-800 hover:bg-gray-200 cursor-pointer">
                         <Link to={`/mealDetails/${result.idMeal}`} onClick={handleResultClick}>
                           {result.strMeal}
@@ -79,6 +79,7 @@ export default function Navbar() {
                   </ul>
                 )}
               </li>
+           
               <li>
                 <Link
                   to="/cart"
