@@ -32,7 +32,7 @@ export default function Welcom() {
   return (
     <>
       <div
-        className=" min-h-[550px] sm:min-h-[600px] bg-gray-100 flex items-center justify-center dark:bg-gray-950 dark:text-white duration-200"
+        className=" min-h-[550px] sm:min-h-[600px] bg-gray-100 flex items-center justify-center dark:bg-gray-950 dark:text-white duration-200 "
         style={bgStyle}
       >
         <div className="container pb-8 sm:pb-0">
@@ -69,7 +69,7 @@ export default function Welcom() {
                 <img
               
                   src={img}
-                  className="w-[300px] sm:w-[400px] mx-auto animate-spin"
+                  className="w-[300px] sm:w-[400px] mx-auto animate-spin z-10 "
                 />
               </div>
 

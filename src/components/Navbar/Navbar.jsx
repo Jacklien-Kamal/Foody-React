@@ -40,7 +40,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="drop-shadow-sm bg-white dark:bg-gray-900 dark:text-white duration-200">
+    <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
       <div className="mx-10 sm:container">
         <div className="flex items-center  justify-between py-4">
           <Theme />
@@ -51,12 +51,12 @@ export default function Navbar() {
             </Link>
 
           <div className="flex items-center gap-4">
-            <button
+            {/* <button
               className="sm:hidden text-2xl"
               onClick={toggleMenu}
             >
-              {/* {isOpen ? <FaBars /> : <FaBars />} */}
-            </button>
+               {isOpen ? <FaBars /> : <FaBars />} 
+            </button> */}
             <ul className={`sm:flex gap-4 text-lg flex`}>
              
               <li className="relative">
@@ -68,7 +68,7 @@ export default function Navbar() {
                   className="py-1 px-2 w-48 md:w-60 text-black border border-gray-300 rounded-full focus:outline-none"
                 />
                 {isDropdownVisible && (
-                  <ul className="absolute bg-white border border-gray-300 rounded-md w-full mt-1 z-10">
+                  <ul className="absolute bg-white border border-gray-300 rounded-md w-full mt-1 z-20">
                     {searchResults.map((result, idx) => (
                       <li key={idx} className="p-2  text-gray-800 hover:bg-gray-200 cursor-pointer">
                         <Link to={`/mealDetails/${result.idMeal}`} onClick={handleResultClick}>

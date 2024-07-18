@@ -8,7 +8,7 @@ import LargeCard from "../components/largeCard/LargeCard";
 
 export default function Home() {
   return (
-    <div className="bg-white  dark:bg-gray-900 dark:text-white  ">
+    <div className="relative">
       <Welcom />
       <Services />
       {/* <LargeCard/> */}
