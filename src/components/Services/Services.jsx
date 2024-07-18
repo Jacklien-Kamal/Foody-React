@@ -36,6 +36,8 @@ export default function Services() {
 
         {/* Cards */}
       <CarouselRatio/>
+
+      <hr/>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Card({foods,food}) {
     const [isAdded,setIsAdded]=useState(false)
 
-    const addToCart = (foodId) => {
+     const addToCart = (foodId) => {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
         const foodItem = foods.find((food) => food.idMeal === foodId);
         if (foodItem) {
@@ -29,13 +29,13 @@ export default function Card({foods,food}) {
     <img
       src={food.strMealThumb}
       alt={food.strTags}
-      className="w-[400px] mt-3 h-[200px] mx-auto  rounded-lg sm:w-[200px] sm:h-[120px] md:w-[350px] md:h-[200px] lg:w-[320px] lg:h-[220px]  hover:scale-105 cursor-pointer"
+      className="w-[400px] mt-3 h-[200px] mx-auto  rounded-lg sm:w-[200px] sm:h-[120px] md:w-[350px] md:h-[200px] lg:w-[320px] lg:h-[220px]  hover:scale-105 duration-300 cursor-pointer"
     />
     </Link>
 
-    <span className="text-sm pfont-bold py-2 pb-0 sm:text-lg md:text-xl lg:text-2xl pe-10 ">
-      {food.strMeal }
-    </span>
+    <p className="text-sm  py-2 sm:text-lg md:text-xl lg:text-2xl pe-10 text-ellipsis overflow-hidden h-10 ...  ">
+    {food.strMeal }
+    </p>
     <p className="text-gray-400 pb-4 sm:text-xs lg:text-sm">
       {food.strCategory
       }

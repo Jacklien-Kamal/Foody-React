@@ -1,8 +1,6 @@
 import * as React from "react";
-import AspectRatio from "@mui/joy/AspectRatio";
 import Box from "@mui/joy/Box";
-import Typography from "@mui/joy/Typography";
-import Card from "@mui/joy/Card";
+
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -49,10 +47,10 @@ export default function CarouselRatio() {
         alignItems: "center",
         width: '100%',
       }}
-      className='px-20'
+      className='px-7 md:px-20'
     >
       <GoChevronLeft
-        className="text-3xl cursor-pointer text-gray-400 hover:text-gray-700"
+        className="text-5xl cursor-pointer text-gray-500 hover:text-black"
         onClick={handlePrev}
         disabled={currentIndex === 0}
       />
@@ -62,7 +60,7 @@ export default function CarouselRatio() {
         className="flex "
         sx={{
           gap: 4,
-          py: 7,
+          py: 9,
           
           overflow: "auto",
           width: '100%', // 343px * 4 (each card's width)
@@ -75,25 +73,27 @@ export default function CarouselRatio() {
       >
        
            {category.map((item,idx)=>(
-           <div key={idx} className="group p-3 max-h-[430px] bg-white shadow-xl text-center min-w-[500px] duration-300 rounded-2xl cursor-pointer hover:text-white dark:bg-gray-800 dark:hover:bg-secondary dark:text-white hover:bg-primary ">
+           <Link to={`/category/${item.strCategory}`}>  <div key={idx} className="group p-3 max-h-[200px] bg-white shadow-xl text-center min-w-[160px] md:min-w-[300px] duration-300 rounded-2xl cursor-pointer hover:text-white dark:bg-gray-800 dark:hover:bg-secondary dark:text-white hover:bg-secondary ">
                <div>
-             <Link to={`/category/${item.strCategory}`}> <img src={item.strCategoryThumb} className="w-52 mx-auto transform -translate-y-14 group-hover:scale-105 group-hover:rotate-12 duration-300 "/>
-             </Link> 
+            <img src={item.strCategoryThumb} className="w-52 mx-auto transform -translate-y-14 md:-translate-y-20 group-hover:scale-105 group-hover:rotate-12 duration-300 "/>
+           
                </div>
                <div className="-translate-y-12 ">
-               <h1 className="text-2xl font-bold"> {item.strCategory}</h1>
+               <h1 className="text-sm md:text-2xl font-bold"> {item.strCategory}</h1>
                <p className="text-sm opacity-75 text-ellipsis  overflow-clip h-16 "> {item.strCategoryDescription}</p>
                </div>
            
            </div>
+           </Link>   
 ))}
       </Box>
 
       <GoChevronRight
-        className="text-3xl cursor-pointer text-gray-400 hover:text-gray-700"
+        className="text-5xl cursor-pointer text-gray-500 hover:text-black"
         onClick={handleNext}
         disabled={currentIndex === category.length - 4}
       />
     </Box>
+
   );
 }

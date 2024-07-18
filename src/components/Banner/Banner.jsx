@@ -25,9 +25,7 @@ export default function
               Lorem, ipsum dolor.
             </h1>
             <p className="text-sm text-gray-500 tracking-wide leading-5">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Eaque reiciendis inventore iste ratione ex alias quis magni at
-              optio
+              Welcome to Foody: An open, crowd-sourced database of Recipes from around the world.
               <br />
               <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

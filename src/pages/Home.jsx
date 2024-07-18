@@ -3,14 +3,17 @@ import Welcom from "../components/welcome/welcome";
 import Services from "../components/Services/Services";
 import Banner from "../components/Banner/Banner";
 import AppStore from "../components/AppStore/AppStore";
-import CarouselRatio from "../components/carousel/carousel";
+import TrendingMeals from "../components/trendingMeal/TrendingMeals";
+import LargeCard from "../components/largeCard/LargeCard";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white  dark:bg-gray-900 dark:text-white  ">
       <Welcom />
       <Services />
+      {/* <LargeCard/> */}
       <Banner />
+      <TrendingMeals/>
       <AppStore />
     </div>
   );

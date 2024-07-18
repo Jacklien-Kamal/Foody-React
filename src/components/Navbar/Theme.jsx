@@ -31,7 +31,7 @@ export default function Theme() {
     <div className='relative'>
 
         <img src={darkImg} onClick={changeTheme} className={`text-2xl absolute cursor-pointer ${theme!='dark'?"opacity-0":'opacity-100'}`}/>
-        <img src={lightImg} className='w-11 '/>
+        <img src={lightImg} className='w-8 md:w-11'/>
 
     </div>
     </>

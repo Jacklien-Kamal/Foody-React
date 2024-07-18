@@ -27,7 +27,7 @@ function Menu() {
   
   return (
     <div className="bg-white py-10 dark:bg-gray-950 dark:text-white ">
-      <h1 className="text-[50px] font-bold pb-8 container ">Food List</h1>
+      <h1 className="text-[50px] font-bold pb-8 px-32 ">Food List</h1>
       <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
         {foods.slice(0, visibleCount).map((food, idx) => (
          <Card key={idx} foods={foods} food={food} />
