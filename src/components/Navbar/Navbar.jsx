@@ -41,7 +41,7 @@ export default function Navbar() {
 
   return (
     <div className="drop-shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
-      <div className="mx-2 sm:container">
+      <div className="mx-8 sm:container">
         <div className="flex items-center  justify-between py-4">
           <Theme />
 
@@ -65,12 +65,12 @@ export default function Navbar() {
                   placeholder="Search for a meal..."
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  className="py-1 px-2 w-32 md:w-60 text-black border border-gray-300 rounded-full focus:outline-none"
+                  className="py-1 px-2 w-40 md:w-60 text-black border border-gray-300 rounded-full focus:outline-none"
                 />
                 {isDropdownVisible && (
                   <ul className="absolute bg-white border border-gray-300 rounded-md w-full mt-1 z-20">
                     {searchResults.splice(0,4).map((result, idx) => (
-                      <li key={idx} className="p-2  text-gray-800 hover:bg-gray-200 cursor-pointer">
+                      <li key={idx} className="px-2 py-1 text-gray-800 hover:bg-gray-200 cursor-pointer">
                         <Link to={`/mealDetails/${result.idMeal}`} onClick={handleResultClick}>
                           {result.strMeal}
                         </Link>
