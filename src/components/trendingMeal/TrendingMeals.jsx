@@ -17,7 +17,7 @@ function TrendingMeals() {
 
   return (
     <div className="bg-white py-10 dark:bg-gray-950 dark:text-white">
-      <h1 className="text-lg md:text-2xl font-bold pb-8 px-32">Trending Meals</h1>
+      <h1 className="text-xl md:text-4xl font-bold pb-8 px-32">Trending Meals</h1>
       <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
         {trendingMeals.map((meal, idx) => (
           <div key={idx} className="bg-white shadow-lg rounded-xl  dark:bg-gray-800 dark:text-white  duration-200 px-8  py-2">
