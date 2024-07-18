@@ -65,7 +65,7 @@ export default function Navbar() {
                   placeholder="Search for a meal..."
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  className="py-1 px-2 w-40 md:w-60 text-black border border-gray-300 rounded-full focus:outline-none"
+                  className="py-1 px-2 w-48 md:w-60 text-black border border-gray-300 rounded-full focus:outline-none"
                 />
                 {isDropdownVisible && (
                   <ul className="absolute bg-white border border-gray-300 rounded-md w-full mt-1 z-20">
