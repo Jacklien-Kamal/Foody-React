@@ -40,7 +40,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
+    <div className="drop-shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
       <div className="mx-10 sm:container">
         <div className="flex items-center  justify-between py-4">
           <Theme />
