@@ -73,7 +73,7 @@ export default function CarouselRatio() {
       >
        
            {category.map((item,idx)=>(
-           <Link to={`/category/${item.strCategory}`}>  <div key={idx} className="group p-3 max-h-[200px] bg-white shadow-xl text-center min-w-[160px] md:min-w-[300px] duration-300 rounded-2xl cursor-pointer hover:text-white dark:bg-gray-800 dark:hover:bg-secondary dark:text-white hover:bg-secondary ">
+           <Link key={idx}  to={`/category/${item.strCategory}`}>  <div className="group p-3 max-h-[200px] bg-white shadow-xl text-center min-w-[160px] md:min-w-[300px] duration-300 rounded-2xl cursor-pointer hover:text-white dark:bg-gray-800 dark:hover:bg-secondary dark:text-white hover:bg-secondary ">
                <div>
             <img src={item.strCategoryThumb} className="w-52 mx-auto transform -translate-y-14 md:-translate-y-20 group-hover:scale-105 group-hover:rotate-12 duration-300 "/>
            

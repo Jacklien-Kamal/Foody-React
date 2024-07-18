@@ -20,7 +20,7 @@ function TrendingMeals() {
       <h1 className="text-[50px] font-bold pb-8 px-32">Trending Meals</h1>
       <div className="grid grid-cols-1 gap-10 px-10 lg:px-32 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
         {trendingMeals.map((meal, idx) => (
-          <div className="bg-white shadow-lg rounded-xl  dark:bg-gray-800 dark:text-white  duration-200 px-8  py-2">
+          <div key={idx} className="bg-white shadow-lg rounded-xl  dark:bg-gray-800 dark:text-white  duration-200 px-8  py-2">
             <Link to={`/mealDetails/${meal.idMeal}`}>
               <img
                 src={meal.strMealThumb}
