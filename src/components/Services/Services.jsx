@@ -1,7 +1,5 @@
 import React from "react";
 import food1 from '../../assets/biryani2.png'
-import food2 from '../../assets/biryani3.png'
-import food3 from '../../assets/biryani4.png'
 import CarouselRatio from "../carousel/carousel";
 export default function Services() {
 

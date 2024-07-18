@@ -35,16 +35,24 @@ import axios from "axios";
           console.error("Error fetching data:", error);
         }
       }
+      export async function getCategories() {
+        try {
+          const response = await axios.get('https://www.themealdb.com/api/json/v1/1/categories.php');
+            return response.data.categories;
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      
+      }
 
 
       export async function getTrendingMeals() {
         try {
           const response = await axios.get(
-            "https://www.themealdb.com/api/json/v1/1/search.php?f=v" // Adjust this endpoint as needed
+            "https://www.themealdb.com/api/json/v1/1/search.php?f=v"
           );
-          // Assuming we have some way to determine trending meals
-          // For demonstration, let's just use the first few meals
-          return response.data.meals.slice(0, 4); // Adjust as needed
+        
+          return response.data.meals.slice(0, 4);
         } catch (error) {
           console.error("Error fetching data:", error);
         }

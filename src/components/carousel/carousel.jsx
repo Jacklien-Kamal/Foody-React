@@ -5,6 +5,7 @@ import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { getCategories } from "../../services/fetchingData";
 
 export default function CarouselRatio() {
   const carouselRef = React.useRef(null);
@@ -27,15 +28,9 @@ export default function CarouselRatio() {
 
   useEffect(() => {
     async function fetchCategories() {
-      try {
-        const response = await axios.get('https://www.themealdb.com/api/json/v1/1/categories.php');
-        if (response) {
-          const data = response.data.categories;
-          setCategory(data.splice(0,6));
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
+      const categories=await getCategories()
+      setCategory(categories);
+
     }
     fetchCategories();
   }, []);
@@ -63,7 +58,7 @@ export default function CarouselRatio() {
           py: 9,
           
           overflow: "auto",
-          width: '100%', // 343px * 4 (each card's width)
+          width: '100%', 
           scrollSnapType: "x mandatory",
           "& > *": {
             scrollSnapAlign: "center",
