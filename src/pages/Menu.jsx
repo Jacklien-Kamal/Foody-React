@@ -46,7 +46,7 @@ function Menu() {
             variant="outlined"
             color="success"
             sx={{ '& .MuiPaginationItem-root': {
-                color:'dark' ? 'white' : 'inherit',
+                color:'light' ? 'green' : 'white',
               },
             }}
           />
