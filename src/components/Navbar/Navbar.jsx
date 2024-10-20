@@ -12,9 +12,9 @@ export default function Navbar() {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
   const navbarLinks = [
-    { title: "Home", link: "/" },
-    { title: "Menu", link: "/menu" },
-    { title: "Contact", link: "#" }
+    { title: "خدماتنا", link: "/" },
+    { title: "من نحن", link: "/menu" },
+    { title: "الرئيسية", link: "#" }
   ];
 
   const toggleMenu = () => {
@@ -40,25 +40,25 @@ export default function Navbar() {
   };
 
   return (
-    <div className="drop-shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
-      <div className="mx-8 sm:container">
-        <div className="flex items-center  justify-between py-4">
-          <Theme />
-
+    <div className="drop-shadow-md bg-white dark:bg-[#272626] dark:text-white duration-200 py-5">
+      {/* <div className="mx-8 sm:container">
+        <div className="flex items-center  justify-between py-4"> */}
+          {/* <Theme /> */}
+{/* 
             <Link to="/" className="hidden md:flex items-center  gap-x-1 font-bold text-xl md:text-3xl  ">
               <img src={logo} className=" w-12 h-12" alt="Logo" />
               Foody
-            </Link>
+            </Link> */}
   
            
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-4"> */}
             {/* <button
               className="sm:hidden text-2xl"
               onClick={toggleMenu}
             >
                {isOpen ? <FaBars /> : <FaBars />} 
             </button> */}
-            <ul className={`sm:flex gap-4 text-lg flex`}>
+            {/* <ul className={`sm:flex gap-4 text-lg flex`}>
             <li className="relative list-none">
                 <input
                   type="text"
@@ -89,10 +89,10 @@ export default function Navbar() {
                   <FaCartShopping className="inline-block ml-2 text-3xl " />
                 </Link>
               </li> 
-            </ul>
-          </div>
+            </ul> */}
+          {/* </div>
         </div>
-      </div>
+      </div> */}
 
       {/* bottom */}
       <div className="container  list-none flex  items-center  py-2">
